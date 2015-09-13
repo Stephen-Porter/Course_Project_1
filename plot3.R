@@ -1,3 +1,5 @@
+#plot3.r
+#Please have your current directory set to where you would like the files
 
 # Download and read .zip data file.
 
@@ -12,8 +14,7 @@ unlink(zipfile)
 
 # Read in file delimited by ; and set any ? to NA values
 power <- read.delim("household_power_consumption.txt", header = TRUE, 
-            sep = ";", quote = "\"", na.strings = "?",
-            dec = ".", fill = TRUE, comment.char = "")
+                    sep = ";", na.strings = "?", dec = ".")
 
 # convert the Date column's datatype from string to date 
 power$Date <- as.Date(power$Date,'%d/%m/%Y') 
