@@ -40,7 +40,7 @@ with(power, {
             lines(datetime, Sub_metering_2, col = "red")
             lines(datetime, Sub_metering_3, col = "blue")
             legend("topright", col = c("black","blue", "red"), lty = c(1,1,1), 
-                   legend = c("Sub_metering_1", "Sub_metering_2", "Submetering_3"))
+                   legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
      })
 #close file
 dev.off()
